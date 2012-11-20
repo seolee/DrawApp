@@ -95,6 +95,8 @@ public class Main extends Application {
     {
         Image image = new Image(fileName,w,h,false,false);
         ImageView view = new ImageView(image);
+        Translate position = new Translate(x1,y1);
+        view.getTransforms().add(position);
         drawing.getChildren().add(view);
     }
     
